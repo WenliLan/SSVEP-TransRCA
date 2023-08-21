@@ -1,5 +1,15 @@
 function [results,rho_final,results_6r]  = TransRCA_test_fast(test_data,model,is_ensemble)
-% test_data: targ * chan * samp
+%  
+
+% Input:
+%     test_data: targ * chan * samp
+%     model: model trained by TransRCA_train.m
+%     is_ensemble: using spitial filter ensemble trick
+
+% Output:
+%    results:  the class number of classification results of test_data
+%    rho_final: the final correlation coefficients 
+%    results_6r: the classification result of each correlation term and the fusion of correlation terms
 
 [num_targ,num_fbs,num_chan_t,num_samp] = size(model.mean_X_t);
 [num_targ,num_fbs,num_chan_s,num_samp,num_src] = size(model.mean_X_s);
