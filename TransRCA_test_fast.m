@@ -1,5 +1,5 @@
 function [results,rho_final,results_6r]  = TransRCA_test_fast(test_data,model,is_ensemble)
-%  
+%  Testing stage, using matrix calculation to speed up
 
 % Input:
 %     test_data: targ * chan * samp
