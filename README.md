@@ -1,2 +1,2 @@
 # SSVEP-TransRCA
-A tansfer learning based SSVEP classification algorithm
+A transfer learning based SSVEP classification algorithm
